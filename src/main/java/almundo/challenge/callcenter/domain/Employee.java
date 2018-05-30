@@ -18,6 +18,11 @@ public class Employee {
         this.free = true;
     }
 
+    /**
+     * Se obtiene un numero entre 5 y 10 para esperar esa cantidad de segundos
+     * y luego se setea el empleado liberado
+     * @throws InterruptedException
+     */
     public void handleCall() throws InterruptedException {
         Integer randomNum = ThreadLocalRandom.current().nextInt(5, 11);
         logger.info("Handle call ...");
